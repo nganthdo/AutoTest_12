@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-23T14:24:05 GMT+07:00" name="Default suite" finished-at="2025-03-23T14:25:52 GMT+07:00" duration-ms="107291">
+  <suite started-at="2025-03-23T14:57:54 GMT+07:00" name="Default suite" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="2454">
     <groups>
     </groups>
-    <test started-at="2025-03-23T14:24:05 GMT+07:00" name="Default test" finished-at="2025-03-23T14:25:52 GMT+07:00" duration-ms="107291">
-      <class name="automation.testsuite.LocateElement">
-        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:24:05 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:24:27 GMT+07:00" duration-ms="21739" status="PASS">
+    <test started-at="2025-03-23T14:57:54 GMT+07:00" name="Default test" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="2454">
+      <class name="automation.testsuite.TS_PracticeLocateElement_B2">
+        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.TS_PracticeLocateElement_B2@4e096385]" started-at="2025-03-23T14:57:54 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="2324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserTest -->
-        <test-method signature="locateByClassName()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:24:27 GMT+07:00" name="locateByClassName" finished-at="2025-03-23T14:24:27 GMT+07:00" duration-ms="65" status="PASS">
+        <test-method signature="submitAndRestForm()[pri:0, instance:automation.testsuite.TS_PracticeLocateElement_B2@4e096385]" started-at="2025-03-23T14:57:56 GMT+07:00" name="submitAndRestForm" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locateByClassName -->
-        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:24:27 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:24:49 GMT+07:00" duration-ms="21497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowserTest -->
-        <test-method signature="locateById()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:24:49 GMT+07:00" name="locateById" finished-at="2025-03-23T14:24:49 GMT+07:00" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- locateById -->
-        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:24:49 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:25:10 GMT+07:00" duration-ms="21306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowserTest -->
-        <test-method signature="locateByLinkText()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:25:10 GMT+07:00" name="locateByLinkText" finished-at="2025-03-23T14:25:10 GMT+07:00" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- locateByLinkText -->
-        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:25:10 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:25:31 GMT+07:00" duration-ms="20842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowserTest -->
-        <test-method signature="locateByName()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:25:31 GMT+07:00" name="locateByName" finished-at="2025-03-23T14:25:31 GMT+07:00" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- locateByName -->
-        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:25:31 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:25:52 GMT+07:00" duration-ms="21461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowserTest -->
-        <test-method signature="locateByTagName()[pri:0, instance:automation.testsuite.LocateElement@4e096385]" started-at="2025-03-23T14:25:52 GMT+07:00" name="locateByTagName" finished-at="2025-03-23T14:25:52 GMT+07:00" duration-ms="37" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- locateByTagName -->
-      </class> <!-- automation.testsuite.LocateElement -->
+        </test-method> <!-- submitAndRestForm -->
+      </class> <!-- automation.testsuite.TS_PracticeLocateElement_B2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
