@@ -8,7 +8,6 @@ public class Employees {
 
 	@Test
 	public void enterEmployeeName() {
-		// TODO Auto-generated constructor stub
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter number of employees: ");
 		int n = scanner.nextInt();
