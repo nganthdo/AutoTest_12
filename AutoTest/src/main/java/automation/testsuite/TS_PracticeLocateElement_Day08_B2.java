@@ -6,7 +6,7 @@ import org.testng.annotations.*;
 
 import automation.common.CommonBase;
 
-public class TS_PracticeLocateElement_B2 extends CommonBase {
+public class TS_PracticeLocateElement_Day08_B2 extends CommonBase {
 
 	@BeforeMethod
 	public void openBrowserTest() {

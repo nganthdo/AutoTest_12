@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-23T14:57:54 GMT+07:00" name="Default suite" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="2454">
+  <suite started-at="2025-03-24T09:25:47 GMT+07:00" name="Default suite" finished-at="2025-03-24T09:26:49 GMT+07:00" duration-ms="61677">
     <groups>
     </groups>
-    <test started-at="2025-03-23T14:57:54 GMT+07:00" name="Default test" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="2454">
-      <class name="automation.testsuite.TS_PracticeLocateElement_B2">
-        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.TS_PracticeLocateElement_B2@4e096385]" started-at="2025-03-23T14:57:54 GMT+07:00" name="openBrowserTest" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="2324" status="PASS">
+    <test started-at="2025-03-24T09:25:47 GMT+07:00" name="Default test" finished-at="2025-03-24T09:26:49 GMT+07:00" duration-ms="61677">
+      <class name="automation.testsuite.TS_PracticeLocateElement_Day08_B2">
+        <test-method is-config="true" signature="openBrowserTest()[pri:0, instance:automation.testsuite.TS_PracticeLocateElement_Day08_B2@4e096385]" started-at="2025-03-24T09:25:47 GMT+07:00" name="openBrowserTest" finished-at="2025-03-24T09:26:49 GMT+07:00" duration-ms="61546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserTest -->
-        <test-method signature="submitAndRestForm()[pri:0, instance:automation.testsuite.TS_PracticeLocateElement_B2@4e096385]" started-at="2025-03-23T14:57:56 GMT+07:00" name="submitAndRestForm" finished-at="2025-03-23T14:57:56 GMT+07:00" duration-ms="84" status="PASS">
+        <test-method signature="submitAndRestForm()[pri:0, instance:automation.testsuite.TS_PracticeLocateElement_Day08_B2@4e096385]" started-at="2025-03-24T09:26:49 GMT+07:00" name="submitAndRestForm" finished-at="2025-03-24T09:26:49 GMT+07:00" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitAndRestForm -->
-      </class> <!-- automation.testsuite.TS_PracticeLocateElement_B2 -->
+      </class> <!-- automation.testsuite.TS_PracticeLocateElement_Day08_B2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

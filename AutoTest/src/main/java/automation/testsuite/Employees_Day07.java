@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import org.testng.annotations.Test;
 
-public class Employees {
+public class Employees_Day07 {
 
 	@Test
 	public void enterEmployeeName() {
