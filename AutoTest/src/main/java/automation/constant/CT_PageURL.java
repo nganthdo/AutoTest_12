@@ -2,13 +2,8 @@ package automation.constant;
 
 public class CT_PageURL {
 
-	public CT_PageURL() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	public static String URL_DEMOQA = "https://demoqa.com/automation-practice-form";
+	public static String URL_CODESTAR = "https://codestar.vn/khoa-hoc/";
+	public static String URL_GLOBALSQA = "https://www.globalsqa.com/demo-site/select-dropdown-menu/";
 
 }
