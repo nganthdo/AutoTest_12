@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.TS_PracticeHomework_Day12">
+      <class name="automation.testsuite.CrmStar_LogoutTest_Homework_Day13">
         <methods>
-          <include name="chooseCountry"/>
+          <include name="LogoutSuccessfully"/>
+          <include name="closeBrowser"/>
           <include name="openBrowserTest"/>
         </methods>
-      </class> <!-- automation.testsuite.TS_PracticeHomework_Day12 -->
+      </class> <!-- automation.testsuite.CrmStar_LogoutTest_Homework_Day13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
