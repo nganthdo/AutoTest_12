@@ -22,7 +22,7 @@ public class CrmStar_LoginTest_Homework_Day13 extends CommonBase {
 	}
 
 	// login successfully
-	@Test
+	@Test(priority = 1)
 	public void LoginSuccessfully() {
 		CrmStar_LoginPage login = new CrmStar_LoginPage(driver);
 		login.LoginFunction("admin@gmail.com", "12345678");
@@ -31,7 +31,7 @@ public class CrmStar_LoginTest_Homework_Day13 extends CommonBase {
 	}
 
 	// failed login with incorrect email
-	@Test
+	@Test(priority = 2)
 	public void LoginFail_IncorrectEmail() {
 		CrmStar_LoginPage login = new CrmStar_LoginPage(driver);
 		login.LoginFunction("admin123@gmail.com", "12345678");
@@ -65,6 +65,8 @@ public class CrmStar_LoginTest_Homework_Day13 extends CommonBase {
 
 		assertTrue(warningMsg.isDisplayed());
 	}
+	
+	
 	
 
 	@AfterMethod

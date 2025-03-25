@@ -20,7 +20,7 @@ public class CrmStar_LogoutTest_Homework_Day13 extends CommonBase {
 	public void LogoutSuccessfully() {
 		CrmStar_LoginPage login = new CrmStar_LoginPage(driver);
 		login.LoginFunction("admin@gmail.com", "12345678");
-		
+		assertTrue(driver.findElement(By.xpath("//p[text()='Quản lý người dùng']")).isDisplayed());
 
 		CrmStar_LogoutPage logout = new CrmStar_LogoutPage(driver);
 		logout.LogoutFunction();

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.CrmStar_LogoutTest_Homework_Day13">
+      <class name="automation.testsuite.Alada_PageFactory_SignupTest_Day14">
         <methods>
-          <include name="LogoutSuccessfully"/>
-          <include name="closeBrowser"/>
           <include name="openBrowserTest"/>
+          <include name="RegisterSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.CrmStar_LogoutTest_Homework_Day13 -->
+      </class> <!-- automation.testsuite.Alada_PageFactory_SignupTest_Day14 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
