@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Alada_PageFactory_SignupTest_Day14">
+      <class name="automation.testsuite.DatePicker_Input_Day15">
         <methods>
-          <include name="openBrowserTest"/>
-          <include name="RegisterSuccessfully"/>
+          <include name="typeToDatePicker"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- automation.testsuite.Alada_PageFactory_SignupTest_Day14 -->
+      </class> <!-- automation.testsuite.DatePicker_Input_Day15 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

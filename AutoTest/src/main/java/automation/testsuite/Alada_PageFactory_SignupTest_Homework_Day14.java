@@ -17,7 +17,7 @@ import automation.constant.CT_PageURL;
 import automation.pageLocator.Alada_PageFactory_Homework_Day14;
 import automation.pageLocator.LoginPageFactory_Practice_Day14;
 
-public class Alada_PageFactory_SignupTest_Day14 extends CommonBase {
+public class Alada_PageFactory_SignupTest_Homework_Day14 extends CommonBase {
 
 	String textEmail = "emma003@test.com";
 	String textPassword = "123456";

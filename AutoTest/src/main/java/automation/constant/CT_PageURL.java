@@ -8,5 +8,7 @@ public class CT_PageURL {
 	public static String URL_RISE_DEMO = "https://rise.fairsketch.com/signin";
 	public static String URL_ALADA = "https://alada.vn/tai-khoan/dang-nhap.html";
 	public static String URL_CRMSTAR = "http://test-system.crmstar.vn/";
+	public static String URL_TEDU = "https://tedu.com.vn/dang-nhap.html";
+	public static String URL_GURUDEMO = "https://demo.guru99.com/test/";
 
 }
