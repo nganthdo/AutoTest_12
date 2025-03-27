@@ -11,9 +11,9 @@ import org.testng.annotations.*;
 
 import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
-import automation.pageLocator.TEDU_Page_Homework_Day15;
+import automation.pageLocator.Day15_Homework_TEDU_Page;
 
-public class TEDU_Homework_Day15 extends CommonBase {
+public class Day15_Homework_TEDU_Test extends CommonBase {
 
 	String password = "1234567";
 
@@ -26,7 +26,7 @@ public class TEDU_Homework_Day15 extends CommonBase {
 	@Test(priority = 1)
 	public void LoginSuccessfully() throws InterruptedException {
 		Thread.sleep(3000);
-		TEDU_Page_Homework_Day15 tedu = new TEDU_Page_Homework_Day15(driver);
+		Day15_Homework_TEDU_Page tedu = new Day15_Homework_TEDU_Page(driver);
 		tedu.LoginFunction("emma@mailinator.com", password);
 		assertTrue(driver.findElement(By.id("my_account")).isDisplayed());
 
@@ -37,7 +37,7 @@ public class TEDU_Homework_Day15 extends CommonBase {
 
 		LoginSuccessfully();
 		// Thread.sleep(3000);
-		TEDU_Page_Homework_Day15 tedu = new TEDU_Page_Homework_Day15(driver);
+		Day15_Homework_TEDU_Page tedu = new Day15_Homework_TEDU_Page(driver);
 		tedu.ChangePasswordFunction("1234567", "123456");
 		password = "123456";
 
@@ -51,7 +51,7 @@ public class TEDU_Homework_Day15 extends CommonBase {
 
 		LoginSuccessfully();
 		// Thread.sleep(3000);
-		TEDU_Page_Homework_Day15 tedu = new TEDU_Page_Homework_Day15(driver);
+		Day15_Homework_TEDU_Page tedu = new Day15_Homework_TEDU_Page(driver);
 		tedu.ChangePasswordFunction("123456", "1234567");
 		password = "1234567";
 
@@ -114,7 +114,7 @@ public class TEDU_Homework_Day15 extends CommonBase {
 
 		LoginSuccessfully();
 
-		TEDU_Page_Homework_Day15 search = new TEDU_Page_Homework_Day15(driver);
+		Day15_Homework_TEDU_Page search = new Day15_Homework_TEDU_Page(driver);
 		search.SearchCourseFunction(keyword);
 
 		assertTrue(VerifySearchResult(), "The body does not contain keyword");

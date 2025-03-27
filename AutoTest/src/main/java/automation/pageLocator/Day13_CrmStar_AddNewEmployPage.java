@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class CrmStar_AddNewEmployPage_Day13 {
+public class Day13_CrmStar_AddNewEmployPage {
 	private WebDriver driver;
 
 	// FindBy for Add New Employee Form
@@ -36,7 +36,7 @@ public class CrmStar_AddNewEmployPage_Day13 {
 	@FindBy(xpath = "//button[@class = 'btn btn-success' and text()='Thêm']")
 	WebElement btnConfirmAddNew;
 
-	public CrmStar_AddNewEmployPage_Day13(WebDriver _driver) {
+	public Day13_CrmStar_AddNewEmployPage(WebDriver _driver) {
 
 		this.driver = _driver;
 		PageFactory.initElements(_driver, this);

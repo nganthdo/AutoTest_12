@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Alada_PageFactory_Homework_Day14 {
+public class Day14_Homework_Alada_PageFactory_Test {
 
 	private WebDriver driver;
 
-	public Alada_PageFactory_Homework_Day14(WebDriver _driver) {
+	public Day14_Homework_Alada_PageFactory_Test(WebDriver _driver) {
 		this.driver = _driver;
 		PageFactory.initElements(_driver, this);
 	}
@@ -85,7 +85,7 @@ public class Alada_PageFactory_Homework_Day14 {
 
 	}
 
-	public void ChangePasswordFunction(String curPass, String newPass, String reNewPass) {
+	public void ChangePasswordFunction(String curPass, String newPass) {
 
 		menuAccount.click();
 		menuEditAccount.click();
@@ -103,7 +103,7 @@ public class Alada_PageFactory_Homework_Day14 {
 		txtNewPass.sendKeys(newPass);
 
 		txtReNewPass.clear();
-		txtReNewPass.sendKeys(reNewPass);
+		txtReNewPass.sendKeys(newPass);
 
 		btnSaveInfo.click();
 	}

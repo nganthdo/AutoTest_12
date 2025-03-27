@@ -14,7 +14,7 @@ import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
 import automation.pageLocator.CrmStar_LoginPage;
 
-public class CrmStar_LoginTest_Homework_Day13 extends CommonBase {
+public class Day13_Homework_CrmStar_LoginTest extends CommonBase {
 
 	@BeforeMethod
 	public void openBrowserTest() {

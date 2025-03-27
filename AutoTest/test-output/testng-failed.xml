@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.DatePicker_Input_Day15">
+      <class name="automation.testsuite.Day15_Homework_TEDU_Test">
         <methods>
-          <include name="typeToDatePicker"/>
-          <include name="closeBrowser"/>
           <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="RecoverPassSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.DatePicker_Input_Day15 -->
+      </class> <!-- automation.testsuite.Day15_Homework_TEDU_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

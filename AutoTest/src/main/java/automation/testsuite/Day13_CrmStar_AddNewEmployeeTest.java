@@ -15,10 +15,10 @@ import org.testng.annotations.*;
 
 import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
-import automation.pageLocator.CrmStar_AddNewEmployPage_Day13;
+import automation.pageLocator.Day13_CrmStar_AddNewEmployPage;
 import automation.pageLocator.CrmStar_LoginPage;
 
-public class CrmStar_AddNewEmployeeTest_Day13 extends CommonBase {
+public class Day13_CrmStar_AddNewEmployeeTest extends CommonBase {
 
 	@BeforeMethod
 	public void openBrowserTest() {
@@ -38,7 +38,7 @@ public class CrmStar_AddNewEmployeeTest_Day13 extends CommonBase {
 		String randomFullName = "emmatest" + randomUserCode;
 		String randomEmail = "emmatest" + randomUserCode + "@test.com";
 		
-		CrmStar_AddNewEmployPage_Day13 addNewEmpployee = new CrmStar_AddNewEmployPage_Day13(driver);
+		Day13_CrmStar_AddNewEmployPage addNewEmpployee = new Day13_CrmStar_AddNewEmployPage(driver);
 		addNewEmpployee.AddNewEmployeeFunction(randomFullName, randomEmail, "000-234-342", "Công Nghệ", "Admin/IT", "KV0024", randomUserCode);
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));

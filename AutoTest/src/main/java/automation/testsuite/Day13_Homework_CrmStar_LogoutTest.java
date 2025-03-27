@@ -10,7 +10,7 @@ import automation.constant.CT_PageURL;
 import automation.pageLocator.CrmStar_LoginPage;
 import automation.pageLocator.CrmStar_LogoutPage;
 
-public class CrmStar_LogoutTest_Homework_Day13 extends CommonBase {
+public class Day13_Homework_CrmStar_LogoutTest extends CommonBase {
 	@BeforeMethod
 	public void openBrowserTest() {
 		driver = initFireFoxDriver(CT_PageURL.URL_CRMSTAR);

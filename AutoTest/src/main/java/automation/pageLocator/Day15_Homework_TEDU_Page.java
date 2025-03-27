@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TEDU_Page_Homework_Day15 {
+public class Day15_Homework_TEDU_Page {
 
 	private WebDriver driver;
 
-	public TEDU_Page_Homework_Day15(WebDriver _driver) {
+	public Day15_Homework_TEDU_Page(WebDriver _driver) {
 
 		this.driver = _driver;
 		PageFactory.initElements(_driver, this);
@@ -33,7 +33,7 @@ public class TEDU_Page_Homework_Day15 {
 	WebElement menuChangePassword;
 
 	// Change Password form
-	@FindBy(id = "OldPassword")
+	@FindBy(xpath = "//input[@id='OldPassword']")
 	WebElement textOldPassword;
 	@FindBy(id = "NewPassword")
 	WebElement textNewPassword;
@@ -62,7 +62,7 @@ public class TEDU_Page_Homework_Day15 {
 
 	}
 
-	public void ChangePasswordFunction(String oldPass, String newPass) {
+	public void ChangePasswordFunction(String oldPass, String newPass) throws InterruptedException {
 
 		// btnCancelSubscription.click();
 
@@ -70,6 +70,7 @@ public class TEDU_Page_Homework_Day15 {
 		js.executeScript("arguments[0].click();", menuMyAccount);
 
 		js.executeScript("arguments[0].click();", menuChangePassword);
+		Thread.sleep(3000);
 
 		textOldPassword.sendKeys(oldPass);
 		textNewPassword.sendKeys(newPass);

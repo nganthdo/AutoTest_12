@@ -4,22 +4,24 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.devtools.v129.storage.model.StorageBucketsDurability;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
-import automation.pageLocator.Alada_PageFactory_Homework_Day14;
+import automation.pageLocator.Day14_Homework_Alada_PageFactory_Test;
 import automation.pageLocator.LoginPageFactory_Practice_Day14;
 
-public class Alada_PageFactory_SignupTest_Homework_Day14 extends CommonBase {
+public class Day14_Homework_Alada_PageFactory_Page extends CommonBase {
 
-	String textEmail = "emma003@test.com";
+	String textEmail = "emma0016@mailinator.com";
 	String textPassword = "123456";
 	String textNewPass = "1234567";
 
@@ -33,21 +35,26 @@ public class Alada_PageFactory_SignupTest_Homework_Day14 extends CommonBase {
 	public void RegisterSuccessfully() {
 
 		// 1. Signup a new account
-		Alada_PageFactory_Homework_Day14 signup = new Alada_PageFactory_Homework_Day14(driver);
-		signup.RegisterFunction("Emma002 ", textEmail, textEmail, textPassword, textPassword, "0901234567");
+		Day14_Homework_Alada_PageFactory_Test signup = new Day14_Homework_Alada_PageFactory_Test(driver);
+		signup.RegisterFunction("Emma0016", textEmail, textEmail, textPassword, textPassword, "0901234567");
 
-		assertTrue(driver.findElement(By.xpath("//a[text()='Khóa học của tôi']")).isDisplayed());
+		isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']"));
+	}
+	
+	public void LoginSuccessfully() {
+		LoginPageFactory_Practice_Day14 login = new LoginPageFactory_Practice_Day14(driver);
+		login.LoginFunction(textEmail, textPassword);
+		isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']"));
 	}
 
 	// 2. Change password
 	@Test(priority = 2)
 	public void ChangePassword() {
-		LoginPageFactory_Practice_Day14 login = new LoginPageFactory_Practice_Day14(driver);
-		login.LoginFunction(textEmail, textPassword);
-		assertTrue(driver.findElement(By.xpath("//a[text()='Khóa học của tôi']")).isDisplayed());
+		
+		LoginSuccessfully();
 
-		Alada_PageFactory_Homework_Day14 changePass = new Alada_PageFactory_Homework_Day14(driver);
-		changePass.ChangePasswordFunction(textPassword, textNewPass, textNewPass);
+		Day14_Homework_Alada_PageFactory_Test changePass = new Day14_Homework_Alada_PageFactory_Test(driver);
+		changePass.ChangePasswordFunction(textPassword, textNewPass);
 
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -69,13 +76,14 @@ public class Alada_PageFactory_SignupTest_Homework_Day14 extends CommonBase {
 	public void LoginSuccessfully_NewPass() {
 		LoginPageFactory_Practice_Day14 login = new LoginPageFactory_Practice_Day14(driver);
 		login.LoginFunction(textEmail, textNewPass);
-		assertTrue(driver.findElement(By.xpath("//a[text()='Khóa học của tôi']")).isDisplayed());
+		isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']"));
 
 	}
 
 	@AfterMethod
 	public void closeBrowser() {
 		driver.close();
+		
 	}
 
 }

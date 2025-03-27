@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
 
-public class TS_PracticeHomework_Day12 extends CommonBase {
+public class Day12_Homework extends CommonBase {
 	@BeforeMethod
 	public void openBrowserTest() {
 		driver = initBrowser(CT_PageURL.URL_GLOBALSQA);
