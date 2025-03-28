@@ -1,6 +1,7 @@
 package automation.testsuite;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -25,7 +26,7 @@ public class Day16_Homework_01__CrmStar_QLKV_Test extends CommonBase {
 
 		Day16_Homework_01__CrmStar_QLKV_Page login = new Day16_Homework_01__CrmStar_QLKV_Page(driver);
 		login.LoginFunction("admin@gmail.com", "12345678");
-		isElementDisplay(By.xpath("//div[contains(text(), 'Đăng nhập thành công')]"));
+		assertTrue(isElementDisplay(By.xpath("//div[contains(text(), 'Đăng nhập thành công')]")));
 	}
 
 	public String searchKLV(String maKV) {
@@ -48,7 +49,8 @@ public class Day16_Homework_01__CrmStar_QLKV_Test extends CommonBase {
 
 		crm.addKVLVFunction(maKV, TenKV);
 		crm.confirm_AddKVLVFunction();
-		isElementDisplay(By.xpath("//div[contains(text(), 'Thêm mới khu vực làm việc thành công')]"));
+		
+		assertTrue(isElementDisplay(By.xpath("//div[contains(text(), 'Thêm mới khu vực làm việc thành công')]"))); 
 
 		String actualResult = searchKLV(maKV);
 		assertEquals(actualResult, maKV);
@@ -61,7 +63,7 @@ public class Day16_Homework_01__CrmStar_QLKV_Test extends CommonBase {
 		addKLVSuccessfully();
 		Day16_Homework_01__CrmStar_QLKV_Page crm = new Day16_Homework_01__CrmStar_QLKV_Page(driver);
 		crm.removeKVLVFunction();
-		isElementDisplay(By.xpath("//div[contains(text(), 'Xóa khu vực làm việc thành công')]"));
+		assertTrue(isElementDisplay(By.xpath("//div[contains(text(), 'Xóa khu vực làm việc thành công')]")));
 
 	}
 
@@ -76,7 +78,7 @@ public class Day16_Homework_01__CrmStar_QLKV_Test extends CommonBase {
 		System.out.println("Mã KV: " + maKV);
 
 		crm.addKVLVFunction(maKV, TenKV);
-		isElementDisplay(By.xpath("//div[contains(text(), 'Dữ liệu nhập vào sai định dạng')]"));
+		assertTrue(isElementDisplay(By.xpath("//div[contains(text(), 'Dữ liệu nhập vào sai định dạng')]")));
 
 	}
 	

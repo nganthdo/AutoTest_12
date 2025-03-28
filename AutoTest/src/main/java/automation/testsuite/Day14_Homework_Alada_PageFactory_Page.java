@@ -21,7 +21,7 @@ import automation.pageLocator.LoginPageFactory_Practice_Day14;
 
 public class Day14_Homework_Alada_PageFactory_Page extends CommonBase {
 
-	String textEmail = "emma0016@mailinator.com";
+	String textEmail = "emma0017@mailinator.com";
 	String textPassword = "123456";
 	String textNewPass = "1234567";
 
@@ -36,15 +36,15 @@ public class Day14_Homework_Alada_PageFactory_Page extends CommonBase {
 
 		// 1. Signup a new account
 		Day14_Homework_Alada_PageFactory_Test signup = new Day14_Homework_Alada_PageFactory_Test(driver);
-		signup.RegisterFunction("Emma0016", textEmail, textEmail, textPassword, textPassword, "0901234567");
+		signup.RegisterFunction("Emma0017", textEmail, textEmail, textPassword, textPassword, "0901234567");
 
-		isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']"));
+		assertTrue(isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']")));
 	}
 	
 	public void LoginSuccessfully() {
 		LoginPageFactory_Practice_Day14 login = new LoginPageFactory_Practice_Day14(driver);
 		login.LoginFunction(textEmail, textPassword);
-		isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']"));
+	 	assertTrue(isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']")));
 	}
 
 	// 2. Change password
@@ -76,7 +76,7 @@ public class Day14_Homework_Alada_PageFactory_Page extends CommonBase {
 	public void LoginSuccessfully_NewPass() {
 		LoginPageFactory_Practice_Day14 login = new LoginPageFactory_Practice_Day14(driver);
 		login.LoginFunction(textEmail, textNewPass);
-		isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']"));
+		assertTrue(isElementDisplay(By.xpath("//a[text()='Khóa học của tôi']")));
 
 	}
 

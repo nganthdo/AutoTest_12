@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day15_Homework_TEDU_Test">
+      <class name="automation.testsuite.Day17_Homework_MediaMartTest">
         <methods>
+          <include name="findZaloIframe"/>
           <include name="openBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="RecoverPassSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.Day15_Homework_TEDU_Test -->
+      </class> <!-- automation.testsuite.Day17_Homework_MediaMartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

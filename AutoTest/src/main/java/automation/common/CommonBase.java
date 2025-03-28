@@ -10,8 +10,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.*;
 
 public class CommonBase {
-	public static WebDriver driver; //static: dùng chung cho tất cả các instance của class đó, giúp tránh bị null khi chạy các test case riêng lẻ.
-	private int pageLoadTimeout = 40;
+	public static WebDriver driver; // static: dùng chung cho tất cả các instance của class đó, giúp tránh bị null
+									// khi chạy các test case riêng lẻ.
+	private int pageLoadTimeout = 15;
 
 	public CommonBase() {
 		// TODO Auto-generated constructor stub
@@ -98,6 +99,23 @@ public class CommonBase {
 	public void scrollToElement(By locator) {
 		WebElement element = getElementPresentDOM(locator);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+
+	// Check Alert
+	public boolean checkAlertPresent() {
+		boolean result = false;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(pageLoadTimeout));
+		try {
+			if(wait.until(ExpectedConditions.alertIsPresent())!=null) {
+				System.out.println("Yes, Alert presents");
+				result = true;
+				
+			}
+		} catch(Exception ex) {
+			result = false;
+		}
+		return result;
+		
 	}
 
 }
