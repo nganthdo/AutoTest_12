@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day17_Homework_MediaMartTest">
+      <class name="automation.testsuite.Day18_BepAnToanTest">
         <methods>
-          <include name="findZaloIframe"/>
+          <include name="searchBepTu_Bosch"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- automation.testsuite.Day17_Homework_MediaMartTest -->
+      </class> <!-- automation.testsuite.Day18_BepAnToanTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,9 +13,12 @@ import automation.constant.CT_PageURL;
 
 public class DatePicker_Input_Day15 extends CommonBase {
 
+	@Parameters("browserTestNG")
 	@BeforeMethod
-	public void openBrowser() {
-		driver = initFireFoxDriver(CT_PageURL.URL_GURUDEMO);
+	public void openBrowser(String browserTestNG) {
+		//driver = initFireFoxDriver(CT_PageURL.URL_GURUDEMO);
+		driver = setupDriver(browserTestNG);
+		driver.get(CT_PageURL.URL_GURUDEMO);
 
 	}
 
@@ -34,10 +37,10 @@ public class DatePicker_Input_Day15 extends CommonBase {
 		assertTrue(driver.findElement(By.xpath("//div[contains(., 'Your Birth Time is 11:12')]")).isDisplayed());
 
 	}
-
-	@AfterMethod
-	public void closeBrowser() {
-		driver.close();
-	}
+//
+//	@AfterMethod
+//	public void closeBrowser() {
+//		driver.close();
+//	}
 
 }

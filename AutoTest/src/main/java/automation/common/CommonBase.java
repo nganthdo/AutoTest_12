@@ -6,13 +6,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.*;
 
 public class CommonBase {
 	public static WebDriver driver; // static: dùng chung cho tất cả các instance của class đó, giúp tránh bị null
 									// khi chạy các test case riêng lẻ.
-	private int pageLoadTimeout = 15;
+	private int pageLoadTimeout = 30;
 
 	public CommonBase() {
 		// TODO Auto-generated constructor stub
@@ -106,16 +107,67 @@ public class CommonBase {
 		boolean result = false;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(pageLoadTimeout));
 		try {
-			if(wait.until(ExpectedConditions.alertIsPresent())!=null) {
+			if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
 				System.out.println("Yes, Alert presents");
 				result = true;
-				
+
 			}
-		} catch(Exception ex) {
+		} catch (Exception ex) {
 			result = false;
 		}
 		return result;
-		
+
 	}
+
+	// khởi tạo Chrome Browser
+	private WebDriver initBrowser() {
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+		return driver;
+	}
+
+	// khởi tạo Firefox Browser
+	private WebDriver initFireFoxDriver() {
+		System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir") + "\\driver\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+
+		driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+		return driver;
+	}
+	
+	// khởi tạo Edge Browser
+		private WebDriver initEdgeDriver() {
+			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\driver\\msedgedriver.exe");
+			driver = new EdgeDriver();
+			driver.manage().window().maximize();
+
+			driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+			return driver;
+		}
+		
+		public WebDriver setupDriver(String browserName) {
+			switch (browserName.trim().toLowerCase()) {
+			case "chrome":
+				System.out.println("Initializing chrome browser test.....");
+				initBrowser();
+				break;
+			case "firefox":
+				System.out.println("Initializing firefox browser test.....");
+				initFireFoxDriver();
+				break;
+			case "edge":
+				System.out.println("Initializing ms edge browser test.....");
+				initEdgeDriver();
+				break;
+			default:
+				System.out.println("Invalid browser test, choose chrome as default of choice.....");
+				initBrowser();
+				break;
+			}
+			return driver;
+		}
 
 }

@@ -15,9 +15,12 @@ import automation.constant.CT_PageURL;
 
 public class Day16_Homework_02_ALERT extends CommonBase {
 
+	@Parameters("browserTestNG")
 	@BeforeMethod
-	public void openBrowser() {
-		driver = initBrowser(CT_PageURL.URL_SELENIUMDMO);
+	public void openBrowser(String browserTestNG ) {
+		//driver = initBrowser(CT_PageURL.URL_SELENIUMDMO);
+		driver = setupDriver(browserTestNG);
+		driver.get(CT_PageURL.URL_CRMSTAR);
 
 	}
 

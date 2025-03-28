@@ -14,9 +14,13 @@ import automation.pageLocator.Day16_Homework_01__CrmStar_QLKV_Page;
 
 public class Day16_Homework_01__CrmStar_QLKV_Test extends CommonBase {
 
+	@Parameters("browserTestNG") // tên param trong phương thức test mà file testNG.xml ánh xạ tới
 	@BeforeMethod
-	public void openBrowser() {
-		driver = initFireFoxDriver(CT_PageURL.URL_CRMSTAR);
+	public void openBrowser(String browserTestNG) // tên param mà phương thức test sẽ tìm giá trị trong file testNG.xml
+	{
+		//driver = initFireFoxDriver(CT_PageURL.URL_CRMSTAR);
+		driver = setupDriver(browserTestNG);
+		driver.get(CT_PageURL.URL_CRMSTAR);
 
 	}
 

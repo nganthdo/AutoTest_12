@@ -8,9 +8,15 @@ import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
 
 public class Day12_Homework extends CommonBase {
+	//@Parameters("browserTestNG")
+	
+	@Parameters("browserTestNG")
 	@BeforeMethod
-	public void openBrowserTest() {
-		driver = initBrowser(CT_PageURL.URL_GLOBALSQA);
+	public void openBrowser(@Optional("firefox") String browserTestNG) { // ưu tiên optional để run trước
+		//driver = initBrowser(CT_PageURL.URL_GURUDEMO);
+
+		driver = setupDriver(browserTestNG);
+		driver.get(CT_PageURL.URL_GLOBALSQA);
 	}
 
 	@Test

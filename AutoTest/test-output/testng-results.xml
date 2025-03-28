@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-28T12:47:43 GMT+07:00" name="Default suite" finished-at="2025-03-28T12:47:59 GMT+07:00" duration-ms="16561">
+  <suite started-at="2025-03-28T18:25:56 GMT+07:00" name="Default suite" finished-at="2025-03-28T18:26:07 GMT+07:00" duration-ms="10597">
     <groups>
     </groups>
-    <test started-at="2025-03-28T12:47:43 GMT+07:00" name="Default test" finished-at="2025-03-28T12:47:59 GMT+07:00" duration-ms="16561">
-      <class name="automation.testsuite.Day17_Homework_MediaMartTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day17_Homework_MediaMartTest@932bc4a]" started-at="2025-03-28T12:47:43 GMT+07:00" name="openBrowser" finished-at="2025-03-28T12:47:55 GMT+07:00" duration-ms="12273" status="PASS">
+    <test started-at="2025-03-28T18:25:56 GMT+07:00" name="Default test" finished-at="2025-03-28T18:26:07 GMT+07:00" duration-ms="10597">
+      <class name="automation.testsuite.Day18_BepAnToanTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.Day18_BepAnToanTest@932bc4a]" started-at="2025-03-28T18:25:56 GMT+07:00" name="openBrowser" finished-at="2025-03-28T18:26:02 GMT+07:00" duration-ms="5587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="findZaloIframe()[pri:0, instance:automation.testsuite.Day17_Homework_MediaMartTest@932bc4a]" started-at="2025-03-28T12:47:55 GMT+07:00" name="findZaloIframe" finished-at="2025-03-28T12:47:59 GMT+07:00" duration-ms="4094" status="PASS">
+        <test-method signature="searchBepTu_Bosch()[pri:0, instance:automation.testsuite.Day18_BepAnToanTest@932bc4a]" started-at="2025-03-28T18:26:02 GMT+07:00" name="searchBepTu_Bosch" finished-at="2025-03-28T18:26:07 GMT+07:00" duration-ms="4965" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findZaloIframe -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testsuite.Day17_Homework_MediaMartTest@932bc4a]" started-at="2025-03-28T12:47:59 GMT+07:00" name="closeBrowser" finished-at="2025-03-28T12:47:59 GMT+07:00" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- automation.testsuite.Day17_Homework_MediaMartTest -->
+        </test-method> <!-- searchBepTu_Bosch -->
+      </class> <!-- automation.testsuite.Day18_BepAnToanTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
