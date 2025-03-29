@@ -39,6 +39,7 @@ public class Day16_Homework_01__CrmStar_QLKV_Page extends CommonBase {
 	}
 
 	public void confirm_AddKVLVFunction() {
+		
 		click(By.xpath("//button[text()='Thêm']"));
 	}
 

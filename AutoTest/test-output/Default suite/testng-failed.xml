@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day18_BepAnToanTest">
+      <class name="automation.testsuite.Day16_Homework_01__CrmStar_QLKV_Test">
         <methods>
-          <include name="searchBepTu_Bosch"/>
+          <include name="closeBrowser"/>
           <include name="openBrowser"/>
+          <include name="addKLVSuccessfully"/>
         </methods>
-      </class> <!-- automation.testsuite.Day18_BepAnToanTest -->
+      </class> <!-- automation.testsuite.Day16_Homework_01__CrmStar_QLKV_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
